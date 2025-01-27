@@ -139,7 +139,7 @@
               easing="ease-in-out"
               duration="1200"
             >
-              <div class="row record bullet">
+              <div class="row">
 
               <div class="col">
                 <p >{{ professionalSummary }}</p>
@@ -152,7 +152,7 @@
                 <p class="title">Experiência</p>
               </div>
             </div>
-            <div class="row record mb-4 bullet" v-for="employment in employmentHistory">
+            <div class="row" v-for="employment in employmentHistory">
 
               <div class="col">
                 <p class="text-uppercase fw-bold position-relative ">
@@ -175,7 +175,7 @@
             <p class="title">Cursos e Certificados</p>
           </div>
         </div>
-        <div class="row record mb-4 bullet" v-for="certification in certifications">
+        <div class="row" v-for="certification in certifications">
 
           <div class="col">
             <p class="text-uppercase fw-bold position-relative">
@@ -192,8 +192,8 @@
     </section>
     <div class="btn-group-fab d-print-none">
       <div>
-        <button onclick="javascript:window.print()" type="button" class="btn btn-main btn-primary" title="Print">
-          <i class="bi bi-printer fs-3"></i>
+        <button onclick="javascript:window.print()" type="button" class="btn btn-main btn-primary " title="Print">
+          <i class="bi bi-printer" style="font-size: 50px;"></i>
         </button>
         
       </div>
